@@ -1,0 +1,11 @@
+{
+  "name": "minimum-tailwindcss",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "set NODE_ENV=production && npx tailwindcss -i ./src/style.css -o ./css/style.css"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "tailwindcss": "^3.3.1"
+  }
+}

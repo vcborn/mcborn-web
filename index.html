@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <title>Home | MCborn</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <meta property="og:url" content="https://mc.vcborn.com/" />
+  <meta property="og:title" content="MCborn" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="VCbornが運営するマイクラ鯖" />
+  <meta property="og:image" content="https://mc.vcborn.com/ogp.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@vcborn_support" />
+  <meta property="og:site_name" content="MCborn" />
+  <meta property="og:locale" content="ja_JP" />
+
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" href="/icon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="/icon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/icon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <style>
+    html,
+    body {
+      font-family: "Poppins", "Noto Sans JP", sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    #hero {
+      background-image: url("./background.png");
+      background-size: cover;
+    }
+
+    .hover-anim1 {
+      -webkit-transform: perspective(1px) translateZ(0);
+      transform: perspective(1px) translateZ(0);
+      -webkit-transition-property: color;
+      transition-property: color;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+    }
+
+    .hover-anim1:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #2098d1;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transform-origin: 100% 50%;
+      transform-origin: 100% 50%;
+      -webkit-transition-property: transform;
+      transition-property: transform;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+    }
+
+    .hover-anim1:hover,
+    .hover-anim1:focus,
+    .hover-anim1:active {
+      color: white;
+    }
+
+    .hover-anim1:hover:before,
+    .hover-anim1:focus:before,
+    .hover-anim1:active:before {
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+    }
+
+    @media (max-width: 768px) {
+      .hover-anim1:before {
+        -webkit-transform-origin: 0% 50%;
+        transform-origin: 0% 50%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="hero">
+    <div class="
+          flex flex-col
+          justify-center
+          h-screen
+          backdrop-filter backdrop-blur-sm
+        ">
+      <div class="container max-w-6xl mx-auto">
+        <div class="
+              flex flex-col
+              md:flex-row md:justify-between
+              font-medium
+              mx-4
+            ">
+          <div>
+            <h1 class="text-6xl flex flex-row items-center">
+              <img src="./fvdb.png" class="h-24" />
+              MCborn
+            </h1>
+            <p class="text-xl md:text-3xl mt-3">
+              君たちの手で新しい世界を作ろう。
+            </p>
+          </div>
+          <div class="
+                text-4xl
+                flex flex-col
+                mt-10
+                md:mt-0 md:justify-center md:text-right
+              ">
+            <a href="./#join" class="mb-2 hover-anim1">Join</a>
+            <a href="https://discord.gg/2jRRMesqgr" class="mb-2 hover-anim1">
+              Discord
+            </a>
+            <a href="./help" class="my-2 hover-anim1">Help</a>
+            <a href="https://status.vcborn.com" class="my-2 hover-anim1">Status</a>
+            <a href="https://vcborn.com" class="md:pl-10 mt-2 hover-anim1">
+              公式サイト
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container max-w-6xl mx-auto my-10">
+    <div class="mx-4 flex flex-col md:flex-row my-8 justify-between gap-8" id="join">
+      <div class="flex flex-col">
+        <h3 class="text-4xl font-bold mb-3">
+          <i class="fa-solid fa-arrow-right-to-bracket"></i>
+          入り方
+        </h3>
+        <p class="text-lg">
+          マインクラフトを起動し、マルチプレイからサーバーを追加を選択。以下のように記入してください。
+        </p>
+        <p class="text-lg">
+          バージョン :
+          <i>1.19.4～</i>
+          (基本どのバージョンでも参加は可能です)
+        </p>
+        <p class="text-lg">
+          サーバー名：
+          <i>MCborn</i>
+        </p>
+        <p class="text-lg">
+          サーバーアドレス(Java)：
+          <i>mc.vcborn.com</i>
+        </p>
+        <p class="text-lg">
+          サーバーアドレス(統合版)：
+          <i>mcbe.vcborn.com</i>
+        </p>
+      </div>
+      <img src="./add_server.png" class="w-full h-auto md:w-auto md:h-64 rounded-md" />
+    </div>
+    <div class="mx-4 flex flex-row my-8 justify-between" id="rules">
+      <div class="flex flex-col">
+        <h3 class="text-4xl font-bold mb-3">
+          <i class="fa-solid fa-clipboard-check"></i>
+          ルール
+        </h3>
+        <ul class="list-disc ml-6 text-lg">
+          <li>節度を持った行動を心がけてください。</li>
+          <li>荒らしダメ、ゼッタイ。</li>
+          <li>チート行為は永久BANの対象となります。</li>
+          <li>サーバーに負荷をかける行為はやめてください。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="mx-4 my-8" id="rules">
+      <div class="">
+        <h3 class="text-4xl font-bold mb-3">
+          <i class="fa-solid fa-map"></i>
+          マップ
+        </h3>
+        <iframe src="https://mc.vcborn.com/dynmap/" class="w-full h-80 rounded-md"></iframe>
+        <a target="_blank" rel="noopener noreferrer" href="/dynmap" class="inline-block my-2 bg-black text-white px-4 py-2 rounded-md duration-200 hover:opacity-80"><i class="fa-solid fa-arrow-up-right-from-square mr-2"></i>新しいタブで開く</a>
+      </div>
+    </div>
+    <div class="mx-4 my-8 text-lg" id="number">
+      <p>総務省届出電気通信事業者</p>
+      <p>届出番号　A-03-19317</p>
+    </div>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1336300432888389"
+      crossorigin="anonymous"></script>
+    <!-- vcborn横長 -->
+    <ins class="adsbygoogle" style="display: block" data-ad-client="ca-pub-1336300432888389" data-ad-slot="6024992576"
+      data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+  <footer class="bg-black text-white py-4">
+    <div class="mx-4">
+      <p>
+        &copy; 2021
+        <a href="https://vcborn.com" class="opacity-60 duration-200 hover:opacity-100">
+          VCborn
+        </a>
+        .
+      </p>
+    </div>
+  </footer>
+  <!--<script src="https://cdn.tailwindcss.com"></script>-->
+</body>
+
+</html>
